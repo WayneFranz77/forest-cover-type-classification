@@ -1,0 +1,29 @@
+# Virtual Environment
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models
+*.keras
+*.h5
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Data
+data/processed/*.csv
+
+# Visualizations
+images/*.png
+
+# VS Code
+.vscode/
+
+# Environment Variables
+.env
