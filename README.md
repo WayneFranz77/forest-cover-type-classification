@@ -135,9 +135,11 @@ This made evaluation metrics beyond accuracy particularly important.
 
 ### Architecture
 
+```python
 Dense(64, activation="relu")
 Dense(32, activation="relu")
 Dense(7, activation="softmax")
+```
 
 ### Results
 
@@ -168,10 +170,12 @@ A series of controlled experiments were conducted to evaluate the effect of diff
 
 The largest improvement came from increasing network capacity:
 
+```python
 Dense(128, activation="relu")
 Dense(64, activation="relu")
 Dense(32, activation="relu")
 Dense(7, activation="softmax")
+```
 
 Additional regularization and optimizer changes did not outperform the larger architecture.
 
@@ -181,10 +185,12 @@ Additional regularization and optimizer changes did not outperform the larger ar
 
 ### Architecture
 
+```python
 Dense(128, activation="relu")
 Dense(64, activation="relu")
 Dense(32, activation="relu")
 Dense(7, activation="softmax")
+```
 
 ### Training Configuration
 
@@ -209,10 +215,12 @@ Dense(7, activation="softmax")
 
 ### Improvement Over Baseline
 
+```text
 Baseline Test Accuracy: 85.55%
 Final Test Accuracy:    90.00%
 
 Improvement: +4.45%
+```
 
 ---
 
@@ -241,7 +249,9 @@ The weakest classes were also among the least represented in the dataset.
 
 The confusion matrix revealed that the most common classification errors occurred between:
 
+```text
 Class 0 ↔ Class 1
+```
 
 This suggests these forest cover types share similar environmental and cartographic characteristics, making them difficult to distinguish using the available variables.
 
@@ -265,6 +275,7 @@ Despite significant class imbalance, the model maintained strong precision and r
 
 ## Project Structure
 
+```text
 forest-cover-type-classification/
 │
 ├── data/
@@ -286,6 +297,7 @@ forest-cover-type-classification/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 
 ---
 
@@ -311,10 +323,6 @@ Potential enhancements include:
 - Additional feature engineering
 
 ---
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE] file for details.
 
 ## Author
 
